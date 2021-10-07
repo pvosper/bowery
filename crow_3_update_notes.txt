@@ -1,0 +1,7 @@
+Adding for reference: I had zero issues with a recent update to Crow v3.0.1
+
+This is mostly interesting as until recently my Python 3.4 install has been unusable since the macOS 11 update. It wasn't until the Python 3.9 release that I finally got everything working again.
+
+- MacBook Pro (Retina, 15-inch, Late 2013)
+- macOS 11.5.2
+- Python 3.9.5
