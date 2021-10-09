@@ -1,5 +1,4 @@
-*.bbprojectd
-
-/sample_scripts/
-
+.bbprojectd
+sample_scripts/
+druid.log
 
