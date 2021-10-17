@@ -9,13 +9,23 @@
 output[1].scale = {2, 4, 5, 7, 9, 10, 12}
 output[3].scale = {2, 5, 9, 12}
 
+s = sequins
+o_seq = s{2,s{4,7},5,s{4,7,10},9}
+
 function new_level()
     return math.random(10)
 end
 
+function ii.self.call1(tt_arf)
+    repeats = 0
+    arf = tt_arf / 10
+    level = new_level()
+    output[1].volts = o_seq() / 12
+    output[2] (ar(arf * .1, arf * .9, level, 'logarithmic'))
+end
+
 -- on TT: 'CROW.C3 75 47 21'
 function ii.self.call3(tt1, tt2, tt3)
-    print("-- start --")
     repeats = tt1
     ar_factor_1 = tt2
     ar_factor_2 = tt3
@@ -36,8 +46,6 @@ output[2].done = function()
     then
         repeats = repeats - 1
         play_note_voice_1()
-    else
-        print("-- 1 done --")
     end
 end 
 
@@ -54,7 +62,5 @@ output[4].done = function()
     then
         repeats = repeats - 1
         play_note_voice_2()
-    else
-        print("-- 2 done --")
     end
 end 
