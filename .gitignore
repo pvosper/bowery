@@ -4,6 +4,5 @@ crow_lua.bbprojectd/
 # Other people's work
 sample_scripts/
 
-# Hrm... this doesn't seem to work
 druid.log
 
