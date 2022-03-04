@@ -1,5 +1,5 @@
 # BBEdit project files
-crow_lua.bbprojectd/
+*.bbprojectd
 
 # Other people's work
 sample_scripts/
